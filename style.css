@@ -400,6 +400,9 @@ nav .fas{
     .header-text h1 {
         font-size: 30px;
     }
+    .nepal{
+        white-space: pre;
+    }
     nav .fas{
         display: block;
         font-size: 25px;
