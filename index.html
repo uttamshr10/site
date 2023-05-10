@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttam Shrestha | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">U<span>ttam.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <img class="main-image" src="essentials/uttamshr.jpg" alt="adminimage">
+            <!-- <img class="main-image" src="essentials/uttam.jpg" alt="adminimage"> -->
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi👋, I'm <span>Uttam</span><br> Shrestha from Nepal</h1>           
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section
+     -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-row-1">
+                    <img src="essentials/uttam.png" alt="adminimage">
+                </div>
+                <div class="about-row-2">
+                    <h1 class="title">About Me</h1>
+                    <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis ab recusandae iste beatae ad rem est reiciendis ipsam dolorem tempore autem, ducimus quis odit atque dicta libero exercitationem eligendi.
+                    Dignissimos quasi perferendis voluptatem suscipit assumenda eum, dolores vel facere consectetur facilis officia blanditiis quia? Doloribus quidem neque doloremque debitis perspiciatis! Dolore, accusantium. Architecto repellat reiciendis natus nesciunt itaque. Rerum!
+                    Ab odio distinctio, ipsa deleniti explicabo illum labore aspernatur, voluptatibus excepturi qui praesentium temporibus voluptate! Dolorem quae aut et sed placeat quo accusantium quod alias possimus hic? Dolore, corporis rerum!
+                    Commodi deleniti, enim adipisci, aut consectetur consequuntur placeat consequatur mollitia odit repellendus quaerat doloribus, provident sint earum molestias magni nisi aliquam illo nobis facere delectus tempora dolores! Tempora, sequi culpa!
+                    Optio pariatur laudantium magnam delectus reprehenderit saepe debitis tenetur voluptas eligendi qui minima, soluta et molestiae ut mollitia quae sapiente omnis incidunt ex eius autem nisi, facilis exercitationem! Aliquid, corporis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Skills and Education -->
+    <div id="skill">
+        <h1 class="title skills">Skills and Education</h1>
+        <div class="container">
+            <div class="titles">
+                <h1 class="tab-links active-link" onclick="opentab('skills')">Skills</h1>
+                <h1 class="tab-links another-link" onclick="opentab('education')">Education</h1>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Frontend</span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Backend</span><br>Django with Python</li>
+                    <li><span>Extra Technologies</span><br>Git, GitHub, PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-Present</span><br>BCA from Vedas College</li>
+                    <li><span>2019-2021</span><br>High School from Prolific College</li>
+                    <li><span>2009-2019</span><br>Primary and Secondary from Liberty School</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="project">
+        <div class="container">
+                <h1 class="title">Projects</h1>
+                <div class="project-list">
+                    <div class="project-1 project-2">
+                        <img src="essentials/resized-catch.png" alt="">
+                        <div class="layer">
+                            <h3>Catch the insect.</h3>
+                            <p>You can kill your hatest insect.</p>
+                            <a href="https://uttamshr10.github.io/insect-catch-game/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-1 project-2">
+                        <img src="essentials/nadiass.jpg" alt="">
+                        <div class="layer">
+                            <h3>Nadia's Garden with Django</h3>
+                            <p>This is made for Nadia's Restaurant.</p>
+                            <a href="https://github.com/uttamshr10/nadia-garden/tree/master" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-1 project-2">
+                        <img src="essentials/resizeddd.png" alt="">
+                        <div class="layer">
+                            <h3>To Do List using Django</h3>
+                            <p>This project is fully secured.</p>
+                            <a href="https://github.com/uttamshr10/todolist" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="projects.html">See more</a>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Basundhara, Kathmandu</p>
+                    <p><i class="fa-solid fa-phone"></i> +977 9818 7700 12</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/uttam-shrestha-b96032224" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:utramshr10@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/uttamshr10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="essentials/uttamshrestha.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formcarry.com/s/mUjj0GuI9n2" method="POST">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by <span>Uttam Shrestha</span></p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
