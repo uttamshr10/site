@@ -72,7 +72,7 @@ nav ul li a:hover::after {
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 19%;
     font-size: 30px;
 }
 
@@ -82,7 +82,7 @@ nav ul li a:hover::after {
     height: 50%;
     float:right;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .header-text h1{
@@ -382,28 +382,30 @@ nav .fas{
         border-radius: 0px;
         margin-top: 10%;
     }
+
     .logo{
         width: 200px;
     }
+
     .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    #header {
-        padding: 0%;
-        margin: 0%;
-    }
+    
     .header-text p{
         padding-top: 15%;
         font-size: 20px;
     }
+    
     .header-text h1 {
         font-size: 40px;
     }
+
     nav .fas{
         display: block;
         font-size: 25px;
     }
+
     nav ul{
         background: #ff004f;
         position: fixed;
@@ -415,42 +417,53 @@ nav .fas{
         padding-top: 50px;
         transition: right 0.5s;
     }
+    
     nav ul li{
         display: block;
         margin: 25px;
     }
+
     nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
+
     .title {
         font-size: 40px;
     }
+
     .about-me {
         margin-top: 10px;
     }
+
     .about-row-1, .about-row-2{
         flex-basis: 100%;
     }
+
     .about-row-1 {
         margin-bottom: 30px;
     }
+
     .about-row-2{
         font-size: 14px;
     }
+
     .tab-links {
         font-size: 20px;
         margin-left:30px;
     }
+
     .tab-links.tab-links.another-link {
         margin-left: 5%;
     }
+
     .tab-contents ul li {
         margin: 10px 40px;
         font-size: 20px;
     }
+
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
