@@ -36,7 +36,7 @@ git@github.com:uttamshr10/liveportfolio.git
 
 ![Contact Me](/images/contact-me.png)
 
-[Live Demo](https://www.https://www.uttam-shrestha.com.np/)
+[Live Demo](https://www.uttam-shrestha.com.np/)
 
 # Author
 ## Uttam Shrestha
