@@ -12,7 +12,7 @@ This is my personal portfolio where you can find everything about me. Scroll dow
 
 1. Clone the repository to your local machine.
 ```
-git@github.com:uttamshr10/liveportfolio.git
+git@github.com:uttamshr10/site.git
 ```
 2. Open live server to view my site.
 
