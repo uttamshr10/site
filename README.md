@@ -18,23 +18,23 @@ git@github.com:uttamshr10/site.git
 
 <p align="center"><b>Intro</b></p>
 
-![Header section](/images/header.png)
+![Header section](/images/introduction.png)
 
 <p align="center"><b>About Me</b></p>
 
-![About Me](/images/about-me.png)
+![About Me](/images/about.png)
 
 <p align="center"><b>Skills and Education</b></p>
 
-![Skills and Education](/images/skills.png)
+![Skills and Education](/images/skills&education.png)
 
 <p align="center"><b>Projects</b></p>
 
-![Projects](/images/project.png)
+![Projects](/images/projects.png)
 
 <p align="center"><b>Contact Me</b></p>
 
-![Contact Me](/images/contact-me.png)
+![Contact Me](/images/contact.png)
 
 [Live Demo](https://www.uttam-shrestha.com.np/)
 
