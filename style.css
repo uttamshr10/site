@@ -419,7 +419,9 @@ nav .fas{
     }
 }
 
-@media only screen and (max-width: 600px){
+
+
+@media (max-width: 600px){
     .main-image{
         float: left;
         width: 100%;
@@ -441,7 +443,6 @@ nav .fas{
     .header-text h1 {
         font-size: 40px;
     }
-
     nav .fas{
         display: block;
         font-size: 25px;
@@ -509,8 +510,3 @@ nav .fas{
         flex-basis: 100%;
     }
 }
-
-
-
-
-
