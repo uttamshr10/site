@@ -46,6 +46,10 @@ nav{
     font-size: 40px;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 .logo span{
     color: var(--secondary-color);
 }
