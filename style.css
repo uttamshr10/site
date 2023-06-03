@@ -507,5 +507,7 @@ nav .fas{
     .header-text h1{
         font-size: 50px;
     }
-    
+    .container-2{
+        margin-bottom: 20px;
+    }
 }
