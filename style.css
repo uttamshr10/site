@@ -111,7 +111,8 @@ nav ul li a:hover::after {
 /* About Section */
 
 #about {
-    padding: 30px 0;
+    padding: 60px 0;
+    margin: 40px 0;
     color: var(--secondary-color);
 }
 
@@ -465,6 +466,14 @@ nav .fas{
     .about-row-2{
         font-size: 14px;
     }
+
+    #about{
+        margin: -40px 0;
+    }
+
+  #skill{
+    margin: 20px 0;
+  }
 
     .tab-links {
         font-size: 20px;
