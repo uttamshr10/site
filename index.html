@@ -1,161 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-84X5JDTKXP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-84X5JDTKXP');
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uttam Shrestha | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="essentials/final-favicon.png" type="image/x-png">
-</head>
-<body>
-    <div id="header">
-        <div class="container-2">
-            <nav>
-                <a href="#header"><h1 class="logo">U<span>ttam.</span></h1></a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <img class="main-image" draggable="false" src="essentials/uttamshr-grey.jpg" alt="adminimage">
-            <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi👋, I'm <span>Uttam</span><br>Shrestha</h1>           
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section-->
-    
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-row-1">
-                    <img src="essentials/header.png" draggable="false" alt="adminimage">
-                </div>
-                <div class="about-row-2">
-                    <h1 class="title">About Me</h1>
-                    <p class="about-me" style="text-align: justify; line-height: 22px;">I am someone who is incredibly passionate about technology and all the amazing things it can do.
-                        One area of technology that I am particularly interested in is web development.<br> I love the challenge of creating beautiful, functional websites that are easy to use and provide real value to the users.
-                        I am also fascinated by data and the incredible insights that can be gained from analyzing it.<br>                        
-                        In short, I am constantly exploring new ideas and pushing myself to learn more.<br> I believe that technology has the power to change the world for the better and I am excited to be a part of that change.</p>
-                        <br>
-                        Here is my favourite quote:
-                        <blockquote>
-                            <br>
-                            <q><i style="text-align: justify;">There is no passion to be found playing small, in settling for a life that is less than the one you are capable of living.</i></q>
-                            <br>
-                            <p style="text-align: right;">- Nelson Mandela</p>
-                        </blockquote>
-                    </div>
-            </div>
-        </div>
-    </div>
-    
-<!-- Skills and Education -->
-    <div id="skill">
-        <h1 class="title skills">Skills and Education</h1>
-        <div class="container">
-            <div class="titles">
-                <h1 class="tab-links active-link" onclick="opentab('skills')">Skills</h1>
-                <h1 class="tab-links another-link" onclick="opentab('education')">Education</h1>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>Frontend</span><br>HTML, CSS, JavaScript</li>
-                    <li><span>Backend</span><br>Django with Python</li>
-                    <li><span>Extra Technologies</span><br>Git, GitHub, PostgreSQL, Heroku</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>2022-Present</span><br>BCA from Vedas College</li>
-                    <li><span>2019-2021</span><br>High School from Prolific College</li>
-                    <li><span>2009-2019</span><br>Primary and Secondary from Liberty School</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects -->
-    <div id="project">
-        <div class="container">
-                <h1 class="title">Projects</h1>
-                <div class="project-list">
-                    <div class="project-1 project-2">
-                        <img src="essentials/devshowcase.png" draggable="false" alt="devshowcase">
-                        <div class="layer">
-                            <h3>Devshowcase using Django</h3>
-                            <p>A platform to connect developers, showcase their skills and projects.</p>
-                            <a href="https://github.com/uttamshr10/devshowcase" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-1 project-2">
-                        <img src="essentials/shortener.png" draggable="false" alt="url-shortener">
-                        <div class="layer">
-                            <h3>URL Shortener using Django</h3>
-                            <p>A platform to shorten your long links.</p>
-                            <a href="https://github.com/uttamshr10/url-shortener" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-1 project-2">
-                        <img src="essentials/bike.png" draggable="false" alt="bike-finder">
-                        <div class="layer">
-                            <h3>BikeFind3r using Django</h3>
-                            <p>A platform to buy and sell everything about bikes.</p>
-                            <a href="https://github.com/uttamshr10/BikeFind3r" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="btn" href="projects.html">See more</a>
-        </div>
-    </div>
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Basundhara, Kathmandu</p>
-                    <p><i class="fa-solid fa-phone"></i> +977 9818 7700 12</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/uttamshr/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:uttamshr10@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://github.com/uttamshr10" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="essentials/uttam-shrestha.pdf" download class="btn btn2" >Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formcarry.com/s/mUjj0GuI9n2" method="POST">
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Your message here"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Made by <span>Uttam Shrestha</span></p>
-        </div>
-    </div>
-    <script src="script.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uttam Shrestha | Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Uttam Shrestha, a software engineer building web applications, digital systems, and exploring AI-powered products."
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

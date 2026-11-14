@@ -1,55 +1,75 @@
-# Portfolio Site
-This is my personal portfolio where you can find everything about me. Scroll down to view my site from Live Demo.
-## Prerequisites
-- Text Editor (VS Code)
-- Git
+# React + TypeScript + Vite
 
-## Built with
-- HTML
-- CSS
-- JavaScript
-## Installation
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. Clone the repository to your local machine.
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
 ```
-git@github.com:uttamshr10/site.git
+
+You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
 ```
-2. Open live server to view my site.
-
-<p align="center"><b>Intro</b></p>
-
-![Header section](/images/introduction.png)
-
-<p align="center"><b>About Me</b></p>
-
-![About Me](/images/about.png)
-
-<p align="center"><b>Skills and Education</b></p>
-
-![Skills and Education](/images/skills&education.png)
-
-<p align="center"><b>Projects</b></p>
-
-![Projects](/images/projects.png)
-
-<p align="center"><b>Contact Me</b></p>
-
-![Contact Me](/images/contact.png)
-
-[Live Demo](https://www.uttam-shrestha.com.np/)
-
-# Author
-## Uttam Shrestha
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uttam-shrestha-b96032224/)
- 
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uttamshr10)
-
-
-
-# Contributing
-
-Contributions are welcome! If you find any bugs or have any suggestions for improvements, please create an issue or a pull request.
-
-# Contact
-
-If you have any questions or feedback, feel free to contact me at utam.shrestha65@gmail.com
