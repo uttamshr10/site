@@ -85,7 +85,7 @@ export default function Education() {
           <section className="education-section">
             <div className="education-section-heading">
               <Code2 size={19} />
-              <h2>Academic Project</h2>
+              <h2>Final Year Project</h2>
             </div>
 
             <div className="education-project">
@@ -100,18 +100,7 @@ export default function Education() {
               </p>
 
               <p>
-                Developed a full-stack wellness monitoring
-                application combining rule-based burnout
-                assessment, machine learning algorithms
-                and AI-assisted insights.
-                </p>
-
-                <p>
-                Implemented Linear Regression, K-Means
-                Clustering and K-Nearest Neighbors from
-                scratch in Python for trend forecasting,
-                behavioral pattern analysis and historical
-                similarity classification.
+                Developed a full-stack application exploring burnout assessment, behavioral patterns and AI-assisted insights. As part of the project, I implemented Linear Regression, K-Means Clustering and K-Nearest Neighbors from scratch in Python, strengthening my understanding of machine learning fundamentals and their practical applications.
                 </p>
 
               <div className="education-project-tech">

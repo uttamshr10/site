@@ -1,8 +1,9 @@
 
 import { useState } from "react";
+import KarkhanaCaseStudy from "./KarkhanaCaseStudy";
+import "./karkhana-case-study.css";
 import {
   ArrowLeft,
-  ArrowRight,
   ChevronRight,
   Code2,
   ExternalLink,
@@ -12,7 +13,15 @@ import {
   Home,
   Search,
   X,
+  BrainCircuit,
+  ChartNoAxesCombined,
+  Building2,
+  Monitor,
+  UsersRound,
+  BriefcaseBusiness,
+  Vote,
 } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import {
   projectCategories,
   projects,
@@ -23,6 +32,20 @@ type Location =
   | { type: "home" }
   | { type: "category"; name: string }
   | { type: "project"; project: PortfolioProject };
+
+const projectIcons = {
+  pause: BrainCircuit,
+  smartfin: ChartNoAxesCombined,
+  "karkhana-internal-web-system": Building2,
+  uttamos: Monitor,
+  githublookup: FaGithub,
+  devshowcase: UsersRound,
+  hrquest: BriefcaseBusiness,
+  "election-management-system": Vote,
+} as const;
+
+const getProjectIcon = (id: string) =>
+  projectIcons[id as keyof typeof projectIcons] ?? FileCode2;
 
 export default function ProjectsExplorer() {
   const [location, setLocation] = useState<Location>({
@@ -218,7 +241,7 @@ export default function ProjectsExplorer() {
 
                 <p>
                   {location.type === "home"
-                    ? "Software systems, experiments, and ideas turned into working products."
+                    ? "Software systems, experiments and ideas turned into working products."
                     : `Projects filed under ${location.name}.`}
                 </p>
               </header>
@@ -256,7 +279,10 @@ export default function ProjectsExplorer() {
 
               {visibleProjects.length > 0 ? (
                 <div className="projects-grid">
-                  {visibleProjects.map((project) => (
+                  {visibleProjects.map((project) => {
+                    const ProjectIcon = getProjectIcon(project.id);
+
+                    return (
                     <button
                       key={project.id}
                       type="button"
@@ -265,13 +291,8 @@ export default function ProjectsExplorer() {
                     >
                       <div className="projects-card-top">
                         <div className="projects-card-icon">
-                          <FileCode2 size={23} />
+                          <ProjectIcon size={23} />
                         </div>
-
-                        <ArrowRight
-                          className="projects-card-arrow"
-                          size={18}
-                        />
                       </div>
 
                       <span className="projects-card-category">
@@ -294,7 +315,8 @@ export default function ProjectsExplorer() {
                         )}
                       </div>
                     </button>
-                  ))}
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="projects-empty">
@@ -317,10 +339,16 @@ export default function ProjectsExplorer() {
                 <ArrowLeft size={16} />
                 Back to projects
               </button>
-
+              {location.project.id === "karkhana-internal-web-system" ? (
+                <KarkhanaCaseStudy />
+              ) : (
+                <>
               <div className="projects-detail-heading">
                 <div className="projects-detail-icon">
-                  <FileCode2 size={30} />
+                  {(() => {
+                  const ProjectIcon = getProjectIcon(location.project.id);
+                  return <ProjectIcon size={26} />;
+                })()}
                 </div>
 
                 <span className="projects-eyebrow">
@@ -385,10 +413,14 @@ export default function ProjectsExplorer() {
                   )}
                 </div>
               )}
-            </article>
+            </>
+          )}
+        </article>
           )}
         </main>
       </div>
     </div>
   );
 }
+
+

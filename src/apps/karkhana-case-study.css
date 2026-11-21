@@ -1,0 +1,42 @@
+/* Karkhana case study — scoped to its detail view only */
+.kcs { width: 100%; max-width: 960px; margin: 0 auto; color: #eee7f3; }
+.kcs-kicker { display:flex; align-items:center; gap:9px; color:#f5a36e; font: 11px/1.5 "JetBrains Mono", monospace; letter-spacing:.07em; }
+.kcs-kicker span { opacity:.5; }
+.kcs-title { margin: 13px 0 10px; font-size:clamp(28px,4vw,43px); letter-spacing:-.055em; line-height:1.12; }
+.kcs-title span { color:#f5a36e; }
+.kcs-lead { max-width:750px; margin:0; color:#c9bed2; font-size:14px; line-height:1.75; }
+.kcs-facts { display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:12px; margin:24px 0 4px; }
+.kcs-facts > div { padding:14px; background:#ffffff08; border:1px solid #ffffff19; border-radius:10px; }
+.kcs-facts span, .kcs-index { display:block; margin-bottom:8px; color:#f5a36e; font:10px/1.4 "JetBrains Mono",monospace; letter-spacing:.06em; }
+.kcs-facts strong { display:block; font-size:12px; line-height:1.6; font-weight:500; }
+.kcs-section { padding:25px 0; border-bottom:1px solid #ffffff1a; }
+.kcs-section h3 { margin:0 0 12px; font-size:20px; letter-spacing:-.03em; }
+.kcs-section > p { max-width:830px; margin:0 0 10px; color:#c9bed2; font-size:13px; line-height:1.75; }
+.kcs-module-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:17px 0 12px; }
+.kcs-module { padding:16px; border:1px solid #ffffff1c; border-radius:10px; background:#ffffff07; }
+.kcs-module > svg { color:#f5a36e; }
+.kcs-module h4, .kcs-challenge h4 { margin:10px 0 7px; font-size:13px; }
+.kcs-module p, .kcs-challenge p { margin:0; color:#bdb1c9; font-size:12px; line-height:1.65; }
+.kcs-section .kcs-note { font-size:11px; color:#a89bb4; }
+.kcs-architecture { display:flex; flex-direction:column; align-items:center; padding:18px; border:1px solid #ffffff1b; border-radius:12px; background:#ffffff06; }
+.kcs-architecture-node { display:flex; flex-direction:column; align-items:center; gap:5px; width:min(100%,430px); padding:13px; background:#ffffff0a; border:1px solid #ffffff20; border-radius:9px; text-align:center; }
+.kcs-architecture-node svg { color:#f5a36e; }
+.kcs-architecture-node strong { font-size:13px; }
+.kcs-architecture-node span { color:#bdb1c9; font-size:11px; }
+.kcs-arrow { margin:8px 0; color:#f5a36e; }
+.kcs-hosting { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:15px; color:#c9bed2; font-size:11px; text-align:center; }
+.kcs-hosting svg { color:#f5a36e; flex-shrink:0; }
+.kcs-challenge { display:grid; grid-template-columns:30px 1fr; gap:12px; padding:12px 0; border-top:1px solid #ffffff13; }
+.kcs-challenge > span { color:#f5a36e; font:12px "JetBrains Mono",monospace; }
+.kcs-challenge h4 { margin:0 0 6px; }
+.kcs-private { display:flex; align-items:center; gap:10px; margin:20px 0 4px; padding:13px 15px; border:1px solid #ffffff1c; border-radius:9px; color:#bdb1c9; font-size:12px; }
+.kcs-private svg:first-child { flex-shrink:0; color:#f5a36e; }
+.kcs-private svg:last-child { margin-left:auto; flex-shrink:0; }
+@media (max-width:760px) { .kcs-facts { grid-template-columns:1fr; } .kcs-module-grid { grid-template-columns:1fr; } .kcs-section { padding:20px 0; } }
+.kcs-stack { display:flex; flex-wrap:wrap; gap:7px; margin:16px 0 0; }
+.kcs-stack span { padding:5px 10px; border:1px solid #ffffff1f; border-radius:99px; color:#c9bed2; font:10.5px/1.4 "JetBrains Mono",monospace; }
+.kcs-list { display:grid; gap:9px; max-width:830px; margin:16px 0 0; padding:0; list-style:none; }
+.kcs-list li { position:relative; padding-left:18px; color:#bdb1c9; font-size:12.5px; line-height:1.7; }
+.kcs-list li::before { content:""; position:absolute; left:2px; top:.72em; width:6px; height:6px; border-radius:50%; background:#f5a36e; }
+.kcs-list strong { color:#eee7f3; font-weight:600; }
+.kcs-section .kcs-architecture { margin-top:16px; }
